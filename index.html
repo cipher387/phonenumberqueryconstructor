@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Phone number search constructor</title>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=en-US&amp;apikey=dd2f32f4-ec03-4262-9a22-534440cf66bd" type="text/javascript"></script>
+      <script src="script.js"></script>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="container">
+      <div class="jumbotron">
+         <h2>Phone number search constructor</h2>
+
+           <form>
+                     <div class="form-group">
+                        <label>Enter phone number:</label>
+                        <input type="text" class="form-control" value="79161234567" id="phonenumber">
+                       
+                     </div>
+
+                  </form>
+                   <hr>
+ <button type="button" onclick="generateVariants()" style="background-color:blue;color:white" class="btn-link">Generate search query</button>
+ <div class="well" id="result">
+ </div>
+  <button type="button" onclick="openQuery('Google')" style="background-color:blue;color:white" class="btn-link">Google</button>
+  <button type="button" onclick="openQuery('Yandex')" style="background-color:blue;color:white" class="btn-link">Yandex</button>
+  <hr>
+   <button type="button" onclick="generateVariants8()" style="background-color:blue;color:white" class="btn-link">Generate search query with 8 (for Russian numbers)</button>
+ <div class="well" id="result8">
+ </div>
+  <button type="button" onclick="openQuery('Google8')" style="background-color:blue;color:white" class="btn-link">Google</button>
+  <button type="button" onclick="openQuery('Yandex8')" style="background-color:blue;color:white" class="btn-link">Yandex</button>
+
+
+
+
+
+           </div></div>
+     <div class="well">
+         <a href="https://t.me/cybdetective" class="telegram-follow-button">Telegram</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+         <a href="https://twitter.com/cyb_detective?ref_src=twsrc%5Etfw" class="twitter-follow-button-2">Twitter</a>
+        <a href="https://linkedin.com/in/cyber-detective-a12a31b7/" class="linkedin-follow-button">Linkedin</a>
+        <a href="https://www.getrevue.co/profile/cyb_detective" class="revue-follow-button">Revue</a>
+        <a href="https://github.com/cipher387" class="github-follow-button">Github</a>
+         <a href="https://cipher387.github.io" class="mainsite-button">All projects</a>
+      </div>
+   </body>
+</html>
