@@ -51,14 +51,14 @@ function generateVariants()
     
 
     } else if (country === "Greece") {
-     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 2) + ") " + phone.substr(3, 4) + "-" + phone.substr(7, 3) + "\" OR ";
-     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " " + phone.substr(2, 2) + " " + phone.substr(3, 3) + " " + phone.substr(6, 4) + "\" OR ";
-     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 2) + ") " + phone.substr(3, 4) + "-" + phone.substr(7, 3) + "\"";
+     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 2) + ") " + phone.substr(3, 4) + "-" + phone.substr(7, 5) + "\" OR ";
+     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " " + phone.substr(2, 2) + " " + phone.substr(3, 3) + " " + phone.substr(6, 6) + "\" OR ";
+     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 2) + ") " + phone.substr(3, 4) + "-" + phone.substr(7, 5) + "\"";
      document.getElementById("result").innerHTML = searchQuery;
      searchQuery = "\"+" + phone + "\" OR ";
-     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 3) + ") " + phone.substr(4, 4) + "-" + phone.substr(8, 3) + "\" OR ";
-     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " " + phone.substr(2, 3) + " " + phone.substr(4, 3) + " " + phone.substr(7, 4) + "\" OR ";
-     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 3) + ") " + phone.substr(4, 4) + "-" + phone.substr(8, 3) + "\"";
+     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 3) + ") " + phone.substr(4, 4) + "-" + phone.substr(8, 4) + "\" OR ";
+     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " " + phone.substr(2, 3) + " " + phone.substr(4, 3) + " " + phone.substr(7, 5) + "\" OR ";
+     searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 3) + ") " + phone.substr(4, 4) + "-" + phone.substr(8, 4) + "\"";
      document.getElementById("result2").innerHTML = searchQuery;   
 
 
