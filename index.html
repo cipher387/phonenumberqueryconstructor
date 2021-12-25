@@ -18,7 +18,6 @@
     <div class="container">
         <div class="jumbotron">
             <h2>Phone number search constructor</h2>
-
             <form>
                 <div class="form-group">
                     <label>Enter phone number:</label>
@@ -33,9 +32,13 @@
 
                 <select onchange="generateVariants()" name="countries" id="countries">
                     <option value="ZERO">Choose a country</option>
-                    <option value="Argentine">Argentine</option>
-                    <option value="Germany">Germany</option>
-                    <option value="Russia">Russia</option>
+                    <option value="Argentine">Argentine (Mobile) +54</option>
+                    <option value="Belgium">Belgium (General) +32</option>
+                    <option value="Germany">Germany (General) +49</option>
+                    <option value="Greece">Greece (General) +30</option>
+                    <option value="France">France (General) +33</option>
+
+                    <option value="Russia">Russia (Mobile) +7</option>
 
                 </select>
 
@@ -49,12 +52,22 @@
             </div>
             <button type="button" onclick="openQuery('Google2')" style="background-color:blue;color:white" class="btn-link">Google</button>
             <button type="button" onclick="openQuery('Yandex2')" style="background-color:blue;color:white" class="btn-link">Yandex</button>
-        </div>
+       
 
-
-
+  </div>
 
     </div>
+    <div class="well">
+</hr>
+
+<p>The greatest difficulty in finding references to phone numbers in search engines is that the same number can be written in different ways.</p>
+
+
+<p>This builder generates queries that allow you to effectively search for different spellings of the same phone number.</p>
+<p class="info">If you think that the query generator for your country numbers needs improvement, contains errors or is not on the list (but you are going to use it), then write to me in one of the social networks (links at the very bottom of the page).</p>
+</div>
+
+
     </div>
     <div class="well">
         <a href="https://t.me/cybdetective" class="telegram-follow-button">Telegram</a>
