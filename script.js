@@ -41,6 +41,16 @@ function generateVariants()
         document.getElementById("result").innerHTML = searchQuery;
         document.getElementById("result2").innerHTML = "";
 
+   } else if (country === "Pakistan") {
+       
+        searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " " + phone.substr(2, 3) + " " + phone.substr(5, 7) + "\" OR ";
+        searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " " + phone.substr(2, 2) + " " + phone.substr(4, 8) + "\" OR ";
+        searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 3) + ") " + phone.substr(5, 3) +"-"+ phone.substr(8, 4) + "\" OR ";
+        searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 2) + ") " + phone.substr(4, 3) +"-"+ phone.substr(7, 5) + "\"";
+        document.getElementById("result").innerHTML = searchQuery;
+        document.getElementById("result2").innerHTML = "";
+
+
     } else if (country === "Belgium") {
         searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " (" + phone.substr(2, 1) + ") " + phone.substr(3, 3) + " " + phone.substr(6, 2)+ " " + phone.substr(8, 2) + "\" OR ";
         searchQuery = searchQuery + "\"" + phone.substr(0, 2) + " " + phone.substr(2, 1) + " " + phone.substr(3, 3) + " " + phone.substr(6, 2)+ " " + phone.substr(8, 2) + "\" OR ";
